@@ -34,6 +34,9 @@
                         <a class="nav-link" href="#pricing">Preise</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#addons">Addons</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#team">Team</a>
                     </li>
                 </ul>
@@ -85,17 +88,142 @@
             </div>
 
         </section>
-        <hr>
-        <!--
+        <hr class="seperator">
         <section id="pricing">
             <h1>Preise</h1>
+            <hr>
+            <div id="pricing-bots_box"><img src="assets/pixelbot.jpeg" alt="bot" id="img_pixelbot">
+                <div id="pricing-bots">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Zeit</th>
+                                <th scope="col">Preis</th>
+                                <th scope="col">Beschreibung</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>24 Stunden</td>
+                                <td>1k Coins</td>
+                                <td>Praktisch für's nächtliche Chunkloading einer Farm</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>48 Stunden</td>
+                                <td>2k Coins</td>
+                                <td>Praktisch für die Bewerbung<a onmouseover="alert01_toast.show()"
+                                        style="cursor: pointer; color: blue;">*</a> eines Events
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>7 Tage</td>
+                                <td>4k Coins</td>
+                                <td>Praktisch für's Chunkloading während des Urlaubs</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>30 Tage</td>
+                                <td>15k Coins</td>
+                                <td>Nachhaltige Inventition durch Werbung<a onmouseover="alert01_toast.show()"
+                                        style="cursor: pointer; color: blue;">*</a>
+                                    und durchgehendes
+                                    Chunkloading</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
         </section>
-        <hr>
-        <section id="team">
-            <h1>Team</h1>
+        <hr class="seperator">
+        <section id="addons">
+            <h1>Addons</h1>
+            <hr>
+            <div id="pricing-addons_box">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/placeholder.jpeg" class="card-img-top" alt="icon">
+                    <div class="card-body">
+                        <h5 class="card-title">Werbung-Addon</h5>
+                        <p class="card-text">Lasse den Bot stündlich für dich Werbung in den Global Chat schreiben und
+                            gewinne so mehr Aufmerksamkeit für deinen Shop oder deine Events.</p>
+                    </div>
+                    <hr style="margin: 0;">
+                    <div class="card-body">
+                        <h6>10.000 Coins</h6>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/placeholder.jpeg" class="card-img-top" alt="icon">
+                    <div class="card-body">
+                        <h5 class="card-title">IngameCommands</h5>
+                        <p class="card-text">Konfiguriere beliebige IngameCommands, die jeder Spieler über eine MSG
+                            ausführen und somit mithilfe eines selbst eingerichteten Textes über jegliches informiert
+                            werden kann.</p>
+                    </div>
+                    <hr style="margin: 0;">
+                    <div class="card-body">
+                        <h6>6.000 Coins</h6>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/placeholder.jpeg" class="card-img-top" alt="icon">
+                    <div class="card-body">
+                        <h5 class="card-title">Ingame-Steuerung</h5>
+                        <p class="card-text">Dieses Addon fügt IngameCommands hinzu, mithilfe dessen von dir ausgewählte
+                            Admins den Bot per MSG steuern können, wie zum Beispiel Chatnachrichten in seinem Namen
+                            senden mit <code>!chat [Nachricht]</code>.</p>
+                    </div>
+                    <hr style="margin: 0;">
+                    <div class="card-body">
+                        <h6>6.000 Coins</h6>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/placeholder.jpeg" class="card-img-top" alt="icon">
+                    <div class="card-body">
+                        <h5 class="card-title">ImitatePlayer-Addon</h5>
+                        <p class="card-text">Wenn eingeschaltet lässt dieses Addon deinen Bot den ihm nähesten Spieler
+                            imitieren.</p>
+                    </div>
+                    <hr style="margin: 0;">
+                    <div class="card-body">
+                        <h6>4.000 Coins</h6>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/placeholder.jpeg" class="card-img-top" alt="icon">
+                    <div class="card-body">
+                        <h5 class="card-title">Chatfilter-Addon</h5>
+                        <p class="card-text">Mithilfe dieses Addons kann der Bot bestimmte Inhalte aus dem Chat
+                            herausfiltern und dir in einen extra Discord-Channel senden.
+                        </p>
+                    </div>
+                    <hr style="margin: 0;">
+                    <div class="card-body">
+                        <h6>6.000 Coins</h6>
+                    </div>
+                </div>
+            </div>
         </section>
-        -->
+        <hr class="seperator">
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <span class="navbar-text">
+                    Footer
+                </span>
+            </div>
+        </nav>
     </main>
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="alert01" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-body">
+                Werbung-Addon nicht inbegriffen.
+            </div>
+        </div>
+    </div>
+
     <!-- ALERT TOAST START -->
     <div class="toast-container position-fixed bottom-0 end-0 p-3">
         <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
@@ -110,7 +238,9 @@
             </div>
         </div>
     </div>
-    <script>const toastTrigger = document.getElementById('liveToastBtn')
+    <script>
+        const alert01 = document.getElementById('alert01')
+        const alert01_toast = bootstrap.Toast.getOrCreateInstance(alert01)
         const toastLiveExample = document.getElementById('liveToast')
         const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
         toastBootstrap.show()</script>
