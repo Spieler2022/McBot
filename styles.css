@@ -84,6 +84,7 @@ main {
     font-weight: 300;
   }
   hr {
+    margin-top: 0;
     margin-left: -10px;
     width: 45vw;
   }
@@ -184,6 +185,40 @@ main {
   hr {
     width: 100%;
   }
+}
+
+.card {
+  transition: transform 0.25s, box-shadow 0.2s;
+  &:hover {
+    transform: scale(1.025);
+    box-shadow: 24px 30px 64px 0 rgba(0, 0, 0, 0.05);
+  }
+}
+
+#team {
+  margin: 30px;
+  margin-bottom: 0;
+  font-family: var(--bs-body-font-family);
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+  h1 {
+    text-align: right;
+    margin-right: 80px;
+    font-weight: 300;
+  }
+  hr {
+    margin-top: 0;
+    width: 45vw;
+  }
+}
+
+#team-cards {
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+  padding-right: 20px;
+  flex-wrap: wrap;
 }
 
 .seperator {
