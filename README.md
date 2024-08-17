@@ -1,1 +1,1 @@
-https://spieler2022.github.io/McBotost-Website
+https://spieler2022.github.io/McBotHost-Website
