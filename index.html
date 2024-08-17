@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McBotHost</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">McBotHost</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding-left: 40px;">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#getStarted">Los geht's</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pricing">Preise</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Team</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="banner">
+        <div id="banner-overlay">
+            <div id="banner-content">McBotHost<br /><button type="button" onclick="location.href = '#getStarted'"
+                    id="start-button">
+                    Los geht's &nbsp;↓</button></div>
+        </div>
+    </div>
+    <main>
+        <section id="getStarted">
+            <div>
+                <h1>Los geht's</h1>
+                <hr />
+                <p style="margin-bottom: 20px;">Du willst einen Bot mieten? - Da bist du bei uns richtig!<br />
+                    Auf unserem <a href="https://discord.gg/tWuDEsh4g7" target="_blank" rel="noopener"
+                        class="link-primary link-offset-1 link-underline-opacity-25 link-underline-opacity-100-hover"
+                        id="dc-link">Discord
+                        Server</a> ist das Mieten eines Bots kinderleicht.<br />
+                    Einfach verifizieren, in <code>#produkte</code> auf <span style="font-weight: 500;">Bezahlen über
+                        Landania</span> klicken,
+                    Zeitraum auswählen und bezahlen.
+                </p>
+                <p>
+                    Daraufhin wird automatisch eine Kategorie mit deinem Namen erstellt, worin du 3 Channels
+                    findest:<br />
+                <ul class="list-group list-group-flush"
+                    style="margin-top: -8px; margin-bottom: 15px; width: fit-content;">
+                    <li class="list-group-item"><code>#logs</code> - dort siehst du die Logs deines Bots</li>
+                    <li class="list-group-item"><code>#chat</code> - dort siehst du den persönlichen Chat deines Bots
+                    </li>
+                    <li class="list-group-item"><code>#support</code> - dort wird dir geholfen, wenn du Fragen oder
+                        Probleme
+                        hast</li>
+                </ul>
+                Außerdem bekommst du dort mit dem Befehl <code>!help</code> eine Übersicht über alle verfügbaren
+                Befehle.
+                </p>
+            </div>
+            <div id="discord-welcome" onclick="document.getElementById('dc-link').click()">
+                <img src="assets/discord_welcome.png" alt="discord-buy" id="img_discord-welcome">
+                <div id="dc-logo-box_discord-welcome"><img src="assets/discord-logo-white.svg" alt="discord-logo"
+                        id="dc-logo_discord-welcome"></div>
+            </div>
+
+        </section>
+        <hr>
+        <!--
+        <section id="pricing">
+            <h1>Preise</h1>
+        </section>
+        <hr>
+        <section id="team">
+            <h1>Team</h1>
+        </section>
+        -->
+    </main>
+    <!-- ALERT TOAST START -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto">Spieler2022</strong>
+                <small>just now</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Hey, @Lebensziel! Die Seite ist noch nicht ganz fertig, also ich habe sie dir erstmal nur zum
+                Ansehen und noch nicht zum Publishen gegeben ^^
+            </div>
+        </div>
+    </div>
+    <script>const toastTrigger = document.getElementById('liveToastBtn')
+        const toastLiveExample = document.getElementById('liveToast')
+        const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+        toastBootstrap.show()</script>
+    <!-- ALERT TOAST END -->
+</body>
+
+</html>
