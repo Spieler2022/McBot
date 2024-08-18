@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McBotHosting</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">McBotHosting</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding-left: 40px;">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#getStarted">Los geht's</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pricing">Preise</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#addons">Addons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Team</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="banner">
+        <div id="banner-overlay">
+            <div id="banner-content">McBotHosting<br /><button type="button" onclick="location.href = '#getStarted'"
+                    id="start-button">
+                    Los geht's &nbsp;↓</button></div>
+        </div>
+    </div>
+    <main>
+        <section id="getStarted">
+            <div>
+                <h1>Los geht's</h1>
+                <hr />
+                <p style="margin-bottom: 20px;">Du willst einen Bot mieten? - Da bist du bei uns richtig!<br />
+                    Auf unserem <a href="https://discord.gg/tWuDEsh4g7" target="_blank" rel="noopener"
+                        class="link-primary link-offset-1 link-underline-opacity-25 link-underline-opacity-100-hover"
+                        id="dc-link">Discord
+                        Server</a> ist das Mieten eines Bots kinderleicht.<br />
+                    Einfach verifizieren, in <code>#produkte</code> auf <span style="font-weight: 500;">Bezahlen über
+                        Landania</span> klicken,
+                    Zeitraum auswählen und bezahlen.
+                </p>
+                <p>
+                    Daraufhin wird automatisch eine Kategorie mit deinem Namen erstellt, worin du 3 Channels
+                    findest:<br />
+                <ul class="list-group list-group-flush"
+                    style="margin-top: -8px; margin-bottom: 15px; width: fit-content;">
+                    <li class="list-group-item"><code>#logs</code> - dort siehst du die Logs deines Bots</li>
+                    <li class="list-group-item"><code>#chat</code> - dort siehst du den persönlichen Chat deines Bots
+                    </li>
+                    <li class="list-group-item"><code>#support</code> - dort wird dir geholfen, wenn du Fragen oder
+                        Probleme
+                        hast</li>
+                </ul>
+                Außerdem bekommst du dort mit dem Befehl <code>!help</code> eine Übersicht über alle verfügbaren
+                Befehle.
+                </p>
+            </div>
+            <div id="discord-welcome" onclick="document.getElementById('dc-link').click()">
+                <img src="assets/discord_welcome.png" alt="discord-buy" id="img_discord-welcome">
+                <div id="dc-logo-box_discord-welcome"><img src="assets/discord-logo-white.svg" alt="discord-logo"
+                        id="dc-logo_discord-welcome"></div>
+            </div>
+
+        </section>
+        <hr class="seperator">
+        <section id="pricing">
+            <h1>Preise</h1>
+            <hr>
+            <div id="pricing-bots_box"><img src="assets/pixelbot.jpeg" alt="bot" id="img_pixelbot">
+                <div id="pricing-bots">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Zeit</th>
+                                <th scope="col">Preis</th>
+                                <th scope="col">Beschreibung</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>24 Stunden</td>
+                                <td>1k Coins</td>
+                                <td>Praktisch für's nächtliche Chunkloading einer Farm</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>48 Stunden</td>
+                                <td>2k Coins</td>
+                                <td>Praktisch für die Bewerbung<a onmouseover="alert01_toast.show()"
+                                        style="cursor: pointer; color: blue;">*</a> eines Events
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>7 Tage</td>
+                                <td>4k Coins</td>
+                                <td>Praktisch für's Chunkloading während des Urlaubs</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>30 Tage</td>
+                                <td>15k Coins</td>
+                                <td>Nachhaltige Inventition durch Werbung<a onmouseover="alert01_toast.show()"
+                                        style="cursor: pointer; color: blue;">*</a>
+                                    und durchgehendes
+                                    Chunkloading</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+        </section>
+        <hr class="seperator">
+        <section id="addons">
+            <h1>Addons</h1>
+            <hr>
+            <div id="pricing-addons_box">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/ads.jpeg" class="card-img-top" alt="icon">
+                    <div class="card-body">
+                        <h5 class="card-title">Werbung-Addon</h5>
+                        <p class="card-text">Lasse den Bot stündlich für dich Werbung in den Global Chat schreiben und
+                            gewinne so mehr Aufmerksamkeit für deinen Shop oder deine Events.</p>
+                    </div>
+                    <hr style="margin: 0;">
+                    <div class="card-body">
+                        <h6>10.000 Coins</h6>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/ingameCommands.jpeg" class="card-img-top" alt="icon">
+                    <div class="card-body">
+                        <h5 class="card-title">IngameCommands</h5>
+                        <p class="card-text">Konfiguriere beliebige IngameCommands, die jeder Spieler über eine MSG
+                            ausführen und somit mithilfe eines selbst eingerichteten Textes über jegliches informiert
+                            werden kann.</p>
+                    </div>
+                    <hr style="margin: 0;">
+                    <div class="card-body">
+                        <h6>6.000 Coins</h6>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/ingameControls.jpeg" class="card-img-top" alt="icon">
+                    <div class="card-body">
+                        <h5 class="card-title">Ingame-Steuerung</h5>
+                        <p class="card-text">Dieses Addon fügt IngameCommands hinzu, mithilfe dessen von dir ausgewählte
+                            Admins den Bot per MSG steuern können, wie zum Beispiel Chatnachrichten in seinem Namen
+                            senden mit <code>!chat [Nachricht]</code>.</p>
+                    </div>
+                    <hr style="margin: 0;">
+                    <div class="card-body">
+                        <h6>6.000 Coins</h6>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/imitate.jpeg" class="card-img-top" alt="icon">
+                    <div class="card-body">
+                        <h5 class="card-title">ImitatePlayer-Addon</h5>
+                        <p class="card-text">Wenn eingeschaltet lässt dieses Addon deinen Bot den ihm nähesten Spieler
+                            imitieren.</p>
+                    </div>
+                    <hr style="margin: 0;">
+                    <div class="card-body">
+                        <h6>4.000 Coins</h6>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/chatfilter.jpeg" class="card-img-top" alt="icon">
+                    <div class="card-body">
+                        <h5 class="card-title">Chatfilter-Addon</h5>
+                        <p class="card-text">Mithilfe dieses Addons kann der Bot bestimmte Inhalte aus dem Chat
+                            herausfiltern und dir in einen extra Discord-Channel senden.
+                        </p>
+                    </div>
+                    <hr style="margin: 0;">
+                    <div class="card-body">
+                        <h6>6.000 Coins</h6>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="seperator">
+        <section id="team">
+            <h1>Team</h1>
+            <hr />
+            <div id="team-cards">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/spieler2022.png" class="card-img-top" alt="team-member_picture">
+                    <div class="card-body">
+                        <h5 class="card-title">Spieler2022</h5>
+                        <p class="card-text">Ich bin Spieler2022, ich code seit 4 Jahren und seit ca 2 Jahren
+                            JavaScript.<br />Ich bin für das WebFrontend und Teile des Backends
+                            zuständig.</p>
+                        <a href="spieler2022/" target="_blank" class="btn btn-primary">mein Discord</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/lebensziel2.png" class="card-img-top" alt="team-member_picture">
+                    <div class="card-body">
+                        <h5 class="card-title">Lebensziel</h5>
+                        <p class="card-text">Hi, ich bin Lebensziel. Ich code seit 6 Jahren, davon seit ca 1,5 Jahren
+                            JavaScript.<br />Ich bin der Gründer von McBotHosting.</p>
+                        <a href="lebensziel/" target="_blank" class="btn btn-primary">mein Discord</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/placeholder.jpeg" class="card-img-top" alt="team-member_picture">
+                    <div class="card-body">
+                        <h5 class="card-title">Katzengott</h5>
+                        <p class="card-text">Some quick example text to not build on the card title and make up the bulk
+                            of the card's content.</p><br /><br />
+                        <a href="katzengott/" target="_blank" class="btn btn-primary">mein Discord</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <nav class="navbar bg-body-tertiary" style="margin-top: 30px;">
+            <div class="container-fluid">
+                <span class="navbar-text">
+                    Footer
+                </span>
+            </div>
+        </nav>
+    </main>
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="alert01" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-body">
+                *Werbung-Addon nicht inbegriffen.
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const alert01 = document.getElementById('alert01')
+        const alert01_toast = bootstrap.Toast.getOrCreateInstance(alert01);
+    </script>
+</body>
+
+</html>
