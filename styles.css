@@ -260,6 +260,9 @@ main {
     flex-direction: column;
     justify-content: center;
   }
+  #pricing-bots {
+    padding-left: 0;
+  }
   #img_pixelbot {
     width: 70vw;
     margin-bottom: 30px;
