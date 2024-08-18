@@ -254,7 +254,7 @@ main {
   }
 
   #team .card {
-    transform: perspective(1000px) rotateX(4deg) rotateY(10deg) rotateZ(-4deg);
+    transform: perspective(1000px) rotateX(-4deg) rotateY(10deg) rotateZ(-4deg);
     box-shadow: 24px 16px 64px 0 rgba(0, 0, 0, 0.08);
     &:hover {
       transform: perspective(1000px) rotate3d(0, 0, 0, 0) rotateX(10deg)
