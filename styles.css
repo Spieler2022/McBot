@@ -223,6 +223,11 @@ main {
   flex-wrap: wrap;
 }
 
+#footer-right {
+  margin-right: 30px;
+  text-align: right;
+}
+
 .seperator {
   border-color: rgb(150, 150, 150);
 }
@@ -275,6 +280,9 @@ main {
   }
   #dc-logo-box_discord-welcome {
     left: 170px;
+  }
+  #footer-right {
+    margin-right: 10px;
   }
 }
 
